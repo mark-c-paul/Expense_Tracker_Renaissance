@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-c-paul/Expense_Tracker_Renaissance.git"
+  },
+  "author": "mark paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mark-c-paul/Expense_Tracker_Renaissance/issues"
+  },
+  "homepage": "https://github.com/mark-c-paul/Expense_Tracker_Renaissance#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.9",
+    "morgan": "^1.10.0"
+  }
+}
