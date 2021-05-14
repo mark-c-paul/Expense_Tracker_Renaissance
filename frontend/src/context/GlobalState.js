@@ -46,7 +46,7 @@ export const GlobalProvider = ({ children }) => {
     }
   }
 
-  async function getExpenses(){
+  async function getExpenses() {
     try {
       const res = await axios.get('/api/v1/expenses');
       dispatch({
@@ -58,16 +58,20 @@ export const GlobalProvider = ({ children }) => {
         type: 'ERROR',
         payload: e.response.data.error
       });
-      
+
     }
   }
 
-  return (<GlobalContext.Provider value={{
-    expenses: state.expenses,
-    addExpense,
-    deleteExpense,
-    getExpenses
-  }}>
-    {children}
+  return (<GlobalContext.Provider value={
+    {
+      expenses: state.expenses,
+      addExpense,
+      deleteExpense,
+      getExpenses
+    }
+  }>
+    {
+      children
+    }
   </GlobalContext.Provider>);
 }

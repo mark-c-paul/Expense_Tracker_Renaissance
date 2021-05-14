@@ -12,7 +12,7 @@ export const ExpenseList = () => {
     <>
       <h4>Expenses:</h4>
       <ul className="list">
-      <p>Name-----------------Cost-----------------Category</p>
+        <p>Name-----------------Cost-----------------Category</p>
         {expenses.map(expense => (<Expense key={expense._id} expense={expense} />))}
       </ul>
     </>

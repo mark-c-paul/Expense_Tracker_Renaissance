@@ -23,7 +23,7 @@ export const Total = () => {
   const sum = costs.reduce((acc, item) => (acc += item), 0);
   return (
     <>
-    <h4>Total: {moneyFormatter(sum)}</h4>
+      <h4>Total: {moneyFormatter(sum)}</h4>
     </>
   )
 }

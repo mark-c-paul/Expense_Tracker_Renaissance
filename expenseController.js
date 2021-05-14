@@ -1,8 +1,7 @@
 const ExpenseModel = require('./expenseModel')
 
-exports.addExpenses = async (req, res, next) => {
+exports.addExpense = async (req, res, next) => {
   try {
-    const { text, amount } = req.body;
     const expense = await ExpenseModel.create(req.body);
     return res.status(201).json({
       data: expense
@@ -21,7 +20,7 @@ exports.addExpenses = async (req, res, next) => {
   }
 }
 
-exports.deleteExpenses = async (req, res, next) => {
+exports.deleteExpense = async (req, res, next) => {
   try {
     const expense = await ExpenseModel.findById(req.params.id);
     if (!expense) {
