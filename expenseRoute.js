@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getExpenses, addExpense, deleteExpense } = require('./expenseModel');
+const { addExpense, deleteExpense, getExpenses } = require('./expenseController');
 
 router
   .route('/')

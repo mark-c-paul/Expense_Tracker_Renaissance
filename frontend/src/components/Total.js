@@ -19,11 +19,8 @@ function moneyFormatter(num) {
 
 export const Total = () => {
   const { expenses } = useContext(GlobalContext);
-
   const costs = expenses.map(expense => expense.cost);
-
   const sum = costs.reduce((acc, item) => (acc += item), 0);
-
   return (
     <>
     <h4>Total: {moneyFormatter(sum)}</h4>

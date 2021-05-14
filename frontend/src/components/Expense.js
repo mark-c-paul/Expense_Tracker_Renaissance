@@ -8,7 +8,7 @@ export const Expense = ({ expense }) => {
     <li>
       {expense.name} <span>${expense.cost}</span>
       <span>{expense.category}</span>
-      <button onClick={() => deleteExpense(expense.id)} className="delete-btn">x</button>
+      <button onClick={() => deleteExpense(expense._id)} className="delete-btn">x</button>
     </li>
   )
 }

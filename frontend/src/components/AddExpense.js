@@ -12,7 +12,6 @@ export const AddExpense = () => {
     e.preventDefault();
 
     const newExpense = {
-      id: Math.floor(Math.random() * 100000000),
       name,
       cost: + cost,
       category
