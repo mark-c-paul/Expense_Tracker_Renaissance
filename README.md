@@ -1,6 +1,6 @@
 # Expense Tracker
 
-An expenses tracking webapp developed by Mark Paul for the Renaissance Code Test
+An expense tracking webapp developed by Mark Paul for the Renaissance code test.
 
 ## Deployment
 
@@ -18,5 +18,5 @@ npm run dev
 ```
 
 ## Usage
-open the app on http://localhost:3000
+Open the app on http://localhost:3000
 
