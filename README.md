@@ -4,7 +4,7 @@ An expense tracking webapp developed by Mark Paul for the Renaissance code test.
 
 ## Deployment
 
-After cloning the app, cd into the fronend directory to install the dependencies and
+After cloning the app, cd into the frontend directory to install the dependencies and
 build the app. Exit out into the project directory, install the dependencies and
 run both the backend and frontend simultaneously with npm run dev.
 
